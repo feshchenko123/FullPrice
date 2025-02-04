@@ -1,0 +1,10 @@
+def full_price(price, tax_rate):
+    """Функция вычисляет полную стоимость товара с налогом."""
+    return price * (1 + tax_rate / 100)
+
+# Пример использования
+price = float(input("Введите цену товара: "))
+tax_rate = float(input("Введите налог в процентах: "))
+
+total = full_price(price, tax_rate)
+print(f"Полная стоимость: {total:.2f}")
